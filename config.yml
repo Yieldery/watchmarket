@@ -27,7 +27,7 @@ markets:
   assets: https://raw.githubusercontent.com/trustwallet/assets/master/blockchains # Assets url - details about TW tokens
 
 storage:
-  redis: redis://localhost:6379
+  redis: redis://h:pfcc69419af34680a276e24779a6fea5e4e498a03b7088ed3e328307fbcd11a9d@ec2-54-205-75-138.compute-1.amazonaws.com:18939
   postgres:
     uri: postgresql://user:pass@localhost/watchmarket?sslmode=disable
     logs: true
