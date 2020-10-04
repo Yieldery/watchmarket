@@ -9,12 +9,10 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download
 COPY . .
-RUN go build -o bin/watchmarket ./cmd/api
-RUN go build -o bin/watchmarket-worker ./cmd/worker
+RUN go build -o bin/watchmarket ./cmd/$SERVICE
 
 FROM alpine:latest
-COPY --from=builder /build/bin /app/bin/watchmarket
-COPY --from=builder /build/bin /app/bin/watchmarket-worker
+COPY --from=builder /build/bin /app/bin/$SERVICE
 COPY --from=builder /build/config.yml /config/
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 

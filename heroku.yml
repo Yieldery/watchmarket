@@ -1,6 +1,6 @@
 build:
   docker:
-    web: Dockerfile
+    web: Dockerfile --build-arg SERVICE="api"
 run:
   web: bin/api
 
