@@ -9,7 +9,7 @@ COPY go.mod .
 COPY go.sum .
 RUN go mod download
 COPY . .
-RUN go build -o bin/watchmarket ./cmd/$SERVICE
+RUN go build -o bin/watchmarket ./cmd/api
 
 FROM alpine:latest
 COPY --from=builder /build/bin /app/bin/$SERVICE
