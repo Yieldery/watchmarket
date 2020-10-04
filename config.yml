@@ -29,7 +29,7 @@ markets:
 storage:
   redis: redis://h:pfcc69419af34680a276e24779a6fea5e4e498a03b7088ed3e328307fbcd11a9d@ec2-54-205-75-138.compute-1.amazonaws.com:18939
   postgres:
-    uri: postgresql://user:pass@localhost/watchmarket?sslmode=disable
+    uri: postgres://kzvtwcttbbmxsg:0851992ded9eed0b66b5e68b2bf0634047fadc3b86c57900a0eb85cf624dc21c@ec2-3-224-97-209.compute-1.amazonaws.com:5432/d88rvuseoqratv
     logs: true
     apm: false
 
