@@ -10,7 +10,7 @@ markets:
 
   coinmarketcap:
     api: https://pro-api.coinmarketcap.com
-    key: #key
+    key: bfba4835-104a-43b6-8f18-29a9cec744e3
     currency: USD
     web_api: https://web-api.coinmarketcap.com
     widget_api: https://widgets.coinmarketcap.com
@@ -29,7 +29,7 @@ markets:
 storage:
   redis: redis://localhost:6379
   postgres:
-    uri: postgresql://user:pass@localhost/my_db?sslmode=disable
+    uri: postgresql://usr:pass@localhost/postgres?sslmode=disable
     logs: false
     env: prod
 

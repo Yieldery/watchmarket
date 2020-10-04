@@ -38,6 +38,7 @@ func createResponseV2(tr controllers.TickerRequestV2, tickers watchmarket.Ticker
 			Provider:  ticker.Price.Provider,
 			Price:     ticker.Price.Value,
 			ID:        id,
+			ImageUrl: ticker.Image,
 		}
 		tickersPrices = append(tickersPrices, tp)
 	}

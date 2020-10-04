@@ -134,6 +134,7 @@ func createTicker(price CoinPrice, coinType watchmarket.CoinType, coinID uint, c
 		CoinName: coinName,
 		CoinType: coinType,
 		TokenId:  strings.ToLower(tokenId),
+		Image: price.Image,
 		Price: watchmarket.Price{
 			Value:     price.CurrentPrice,
 			Change24h: price.PriceChangePercentage24h,

@@ -61,6 +61,7 @@ func (c Controller) getTickersByPriority(tickerQueries []models.TickerQuery, ctx
 			CoinName:   sr.CoinName,
 			CoinType:   watchmarket.CoinType(sr.CoinType),
 			LastUpdate: sr.LastUpdated,
+			Image: sr.ImageUrl,
 			Price: watchmarket.Price{
 				Change24h: sr.Change24h,
 				Currency:  sr.Currency,

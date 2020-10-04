@@ -51,6 +51,7 @@ func toTickersModel(tickers watchmarket.Tickers) []models.Ticker {
 			CoinName:    t.CoinName,
 			CoinType:    string(t.CoinType),
 			TokenId:     t.TokenId,
+			ImageUrl: 	 t.Image,
 			Change24h:   t.Price.Change24h,
 			Currency:    t.Price.Currency,
 			Provider:    t.Price.Provider,

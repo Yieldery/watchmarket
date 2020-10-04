@@ -27,6 +27,7 @@ type (
 		Id                           string    `json:"id"`
 		Symbol                       string    `json:"symbol"`
 		Name                         string    `json:"name"`
+		Image						 string    `json:"image"`
 		CurrentPrice                 float64   `json:"current_price"`
 		PriceChange24h               float64   `json:"price_change_24h"`
 		PriceChangePercentage24h     float64   `json:"price_change_percentage_24h"`

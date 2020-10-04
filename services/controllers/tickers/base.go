@@ -48,9 +48,7 @@ func (c Controller) HandleTickersRequestV2(tr controllers.TickerRequestV2, ctx c
 	if err != nil {
 		return controllers.TickerResponseV2{}, errors.New(watchmarket.ErrInternal)
 	}
-
 	tickers = c.normalizeTickers(tickers, rate, ctx)
-
 	return createResponseV2(tr, tickers), nil
 }
 

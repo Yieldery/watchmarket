@@ -26,6 +26,7 @@ type (
 		Coin       uint      `json:"coin"`
 		CoinName   string    `json:"coin_name"`
 		TokenId    string    `json:"token_id,omitempty"`
+		Image  	   string    `json:"image"`
 		CoinType   CoinType  `json:"type,omitempty"`
 		Price      Price     `json:"price,omitempty"`
 		LastUpdate time.Time `json:"last_update"`

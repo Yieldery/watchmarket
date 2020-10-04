@@ -16,6 +16,7 @@ type Ticker struct {
 	TokenId     string `gorm:"primary_key" sql:"index"`
 	Currency    string `gorm:"primary_key"`
 	Provider    string `gorm:"primary_key"`
+	ImageUrl    string
 	Change24h   float64
 	Value       float64
 	Volume      float64
