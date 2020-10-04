@@ -3,5 +3,4 @@ build:
     web: Dockerfile
 run:
   web: bin/api
-  worker: bin/worker
 
