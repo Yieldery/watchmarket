@@ -10,7 +10,7 @@ markets:
 
   coinmarketcap:
     api: https://pro-api.coinmarketcap.com
-    key: 30b12bbb-5c15-4d03-8569-bfa6afd2089d
+    key: bfba4835-104a-43b6-8f18-29a9cec744e3
     currency: USD
     web_api: https://web-api.coinmarketcap.com
     widget_api: https://widgets.coinmarketcap.com
@@ -34,7 +34,7 @@ storage:
     apm: false
 
 worker:
-  tickers: 1m
+  tickers: 10m
   rates: 5m
   batch_limit: 3000
 

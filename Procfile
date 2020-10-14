@@ -1,2 +1,2 @@
-web: bin/watchmarket
-engine: bin/watchmarket-engine
+web: bin/api
+worker: bin/worker

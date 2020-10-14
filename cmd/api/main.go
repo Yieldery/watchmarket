@@ -19,11 +19,12 @@ import (
 	tickerscontroller "github.com/trustwallet/watchmarket/services/controllers/tickers"
 	"github.com/trustwallet/watchmarket/services/markets"
 	"github.com/trustwallet/watchmarket/services/worker"
+	"os"
 	"time"
 )
 
 const (
-	defaultPort       = "8420"
+	defaultPort       = "8080"
 	defaultConfigPath = "../../config.yml"
 )
 
@@ -41,11 +42,11 @@ var (
 )
 
 func init() {
-	port, confPath = internal.ParseArgs(defaultPort, defaultConfigPath)
-
-	configuration = internal.InitConfig(confPath)
 	logger.InitLogger()
-	port = configuration.RestAPI.Port
+	port, confPath = internal.ParseArgs(defaultPort, defaultConfigPath)
+	port = os.Getenv("PORT")
+	logger.Info("port in startup", os.Getenv("PORT"))
+	configuration = internal.InitConfig(confPath)
 	chartsPriority := configuration.Markets.Priority.Charts
 	ratesPriority := configuration.Markets.Priority.Rates
 	tickerPriority := configuration.Markets.Priority.Tickers

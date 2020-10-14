@@ -1,6 +1,8 @@
 build:
   docker:
-    web: Dockerfile --build-arg SERVICE="api"
-run:
-  web: bin/api
+    web: Dockerfile
+  config:
+    SERVICE: api
 
+run:
+  web: bin/watchmarker
